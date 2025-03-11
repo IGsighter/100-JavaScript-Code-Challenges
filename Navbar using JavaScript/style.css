@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: aquamarine;
+}
+
+.nav-bar {
+    height: 100vh;
+    width: 200px;
+    padding: 60px 20px;
+    background-color: #0984e3;
+    position: fixed;
+    top: 0;
+    right: -220px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 5;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    color: black;
+    margin: 20px 0;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.open-icon {
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.hide-item {
+    display: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    font-size: 30px;
+    right: 150px;
+    cursor: pointer;
+}
+
+.show-nav {
+    transform: translateX(-220px);
+}
